@@ -92,6 +92,22 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
 - `README.md`: Project description and instructions.
 - `requirements.txt`: Lists the Python dependencies for the project.
 
+### Diabetes Prediction
+
+#### Input Form
+![Input Form](URL_TO_INPUT_FORM_IMAGE)
+
+#### Prediction Result
+![Prediction Result](URL_TO_PREDICTION_RESULT_IMAGE)
+
+### Diabetes Visualization
+
+#### EDA - Pairplot
+![Pairplot](URL_TO_PAIRPLOT_IMAGE)
+
+#### EDA - Correlation Heatmap
+![Correlation Heatmap](URL_TO_HEATMAP_IMAGE)
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
