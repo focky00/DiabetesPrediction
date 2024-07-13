@@ -9,7 +9,7 @@ This repository contains a project developed under Data Science and Visualizatio
 ```plaintext
 diabetes-prediction-app/
 │
-├── data/
+├── dataset/
 │   └── diabetes.csv                    # Dataset from Kaggle
 │
 ├── notebooks/
