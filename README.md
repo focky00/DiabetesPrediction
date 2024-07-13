@@ -98,7 +98,7 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
 ### Diabetes Prediction
 
 #### Input Form
-![Input Form](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/dsproject-2.2/images/Diabetes_form.png)
+![Input Form](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/Diabetes_form.png)
 
 #### Prediction Result
 ![Prediction Result](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/Diabetes_output.png)
