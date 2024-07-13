@@ -22,7 +22,7 @@ diabetes-prediction-app/
 │   ├── static/
 │   │   └── style.css                   # CSS file for styling
 │   ├── app.py                          # Flask application code
-│   ├── logistic_regression_model.pkl   # Trained Logistic Regression model
+│   ├── random_forest.h5                # Trained Random Forest model in .h5 format
 │   └── random_forest.pkl               # Trained Random Forest model
 │
 ├── .gitignore                          # Git ignore file
