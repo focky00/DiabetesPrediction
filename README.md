@@ -57,7 +57,7 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
     ```
 2. Navigate to the project directory:
     ```bash
-    cd diabetes-prediction-app
+    cd Diabetes-Prediction
     ```
 3. Install the required packages:
     ```bash
@@ -85,7 +85,7 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
 
 ## File Descriptions
 
-- `data/diabetes.csv`: The dataset used for training and predictions.
+- `dataset/diabetes.csv`: The dataset used for training and predictions.
 - `notebooks/diabetes_prediction.ipynb`: Jupyter Notebook containing EDA, model training, and selection.
 - `app/templates/index.html`: The home page with the input form for user data.
 - `app/templates/result.html`: The results page displaying the prediction.
@@ -101,15 +101,15 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
 ![Input Form](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/dsproject-2.2/images/Diabetes_form.png)
 
 #### Prediction Result
-![Prediction Result](URL_TO_PREDICTION_RESULT_IMAGE)
+![Prediction Result](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/Diabetes_output.png)
 
 ### Diabetes Visualization
 
 #### EDA - Pairplot
-![Pairplot](URL_TO_PAIRPLOT_IMAGE)
+![Pairplot](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/pair_plot.png)
 
 #### EDA - Correlation Heatmap
-![Correlation Heatmap](URL_TO_HEATMAP_IMAGE)
+![Correlation Heatmap](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/correlation_matrix.png)
 
 ## Contributing
 
@@ -119,5 +119,3 @@ Contributions are welcome! If you have any suggestions or improvements, please c
 
 This project is licensed under the MIT License.
 ```
-
-You can copy and paste this into your `README.md` file in your repository. Adjust any paths and URLs as necessary for your specific setup.
