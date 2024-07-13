@@ -19,8 +19,11 @@ diabetes-prediction-app/
 │   ├── templates/
 │   │   ├── index.html                  # HTML form for user input
 │   │   └── result.html                 # HTML page for displaying prediction result
+│   ├── static/
+│   │   └── style.css                   # CSS file for styling
 │   ├── app.py                          # Flask application code
-│   └── logistic_regression_model.pkl   # Trained Logistic Regression model
+│   ├── logistic_regression_model.pkl   # Trained Logistic Regression model
+│   └── random_forest.pkl               # Trained Random Forest model
 │
 ├── .gitignore                          # Git ignore file
 ├── README.md                           # Project description and instructions
