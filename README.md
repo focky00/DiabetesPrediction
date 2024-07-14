@@ -6,6 +6,13 @@ This repository contains a project developed under Data Science and Visualizatio
 
 ## Supervised by
 [Prof. Agughasi Victor Ikechukwu](https://github.com/Victor-Ikechukwu), (Assistant Professor) Department of CSE, MIT Mysore
+
+## Collaborators
+- 4MH21CS097 [Siri G](https://github.com/Siribug)
+- 4MH21CS103 [Suhas K M](https://github.com/suhaskm28)
+- 4MH21CS107 [Syed Furkhan Ahmed](https://github.com/)
+- 4MH21CS112 [Thejas R](https://github.com/Thejuraj2003)
+
 ## Project Structure
 
 ```plaintext
