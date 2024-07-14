@@ -6,7 +6,7 @@ import h5py
 app = Flask(__name__)
 
 # Load the trained model from .h5 file
-model_h5_path = 'app/random_forest.h5'
+model_h5_path = 'random_forest.h5'
 with h5py.File(model_h5_path, 'r') as h5_file:
     model_byte_stream = h5_file['random_forest_model'][()]
     model = pickle.loads(model_byte_stream.tobytes())
