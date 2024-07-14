@@ -5,7 +5,7 @@
 This repository contains a project developed under Data Science and Visualization, where we explore and visualize a diabetes dataset, train various machine learning models, and deploy the best model using a Flask web application for predicting diabetes.
 
 ## Supervised by
-![Prof. Agughasi Victor Ikechukwu](https://github.com/Victor-Ikechukwu), (Assistant Professor) Department of CSE, MIT Mysore)
+[Prof. Agughasi Victor Ikechukwu](https://github.com/Victor-Ikechukwu), (Assistant Professor) Department of CSE, MIT Mysore
 ## Project Structure
 
 ```plaintext
@@ -85,6 +85,62 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
     ```
 3. Open your web browser and go to `http://127.0.0.1:5000` to use the application.
 
+## Code Explanation
+
+`app.py`
+This is the main Flask application file.
+```plaintext
+from flask import Flask, render_template, request
+import pickle
+import numpy as np
+import h5py
+
+app = Flask(__name__)
+
+# Load the trained model from .h5 file
+model_h5_path = 'app/random_forest.h5'
+with h5py.File(model_h5_path, 'r') as h5_file:
+    model_byte_stream = h5_file['random_forest_model'][()]
+    model = pickle.loads(model_byte_stream.tobytes())
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+# Prediction route - handles form submission and prediction
+
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    # Get input values from the form
+    pregnancies = int(request.form.get('pregnancies', 0))
+    glucose = int(request.form['glucose'])
+    blood_pressure = int(request.form['blood_pressure'])
+    skin_thickness = int(request.form.get('skin_thickness', 0))
+    insulin = int(request.form.get('insulin', 0))
+    bmi = float(request.form['bmi'])
+    diabetes_pedigree_function = float(
+        request.form.get('diabetes_pedigree_function', 0.0))
+    age = int(request.form['age'])
+
+    # Make prediction using the loaded model
+    input_data = np.array(
+        [[pregnancies, glucose, blood_pressure, bmi, diabetes_pedigree_function, age]])
+    prediction = model.predict(input_data)
+
+    # Prepare response
+    if prediction[0] == 1:
+        result = 'Diabetes'
+    else:
+        result = 'No Diabetes'
+
+    return render_template('result.html', prediction=result)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
 ## File Descriptions
 
 - `dataset/diabetes.csv`: The dataset used for training and predictions.
@@ -113,11 +169,9 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
 #### EDA - Correlation Heatmap
 ![Correlation Heatmap](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/correlation_matrix.png)
 
-## Contributing
-
-Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
 
 ## License
 
 This project is licensed under the MIT License.
 ```
+
