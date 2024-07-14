@@ -7,7 +7,7 @@ This repository contains a project developed under Data Science and Visualizatio
 ## Project Structure
 
 ```plaintext
-diabetes-prediction-app/
+Diabetes-Prediction/
 │
 ├── dataset/
 │   └── diabetes.csv                    # Dataset from Kaggle
@@ -53,7 +53,7 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/diabetes-prediction-app.git
+    git clone https://github.com/suhaskm28/diabetes-prediction-app.git
     ```
 2. Navigate to the project directory:
     ```bash
