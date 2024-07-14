@@ -1,15 +1,15 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+import h5py
 
 app = Flask(__name__)
 
-# Load the trained model
-with open(r'C:\Users\ADMIN\Desktop\DataScienceLab\project\dsproject-2.2\diabetes_prediction_app\random_forest.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
-
-# Home route - renders the form
-
+# Load the trained model from .h5 file
+model_h5_path = 'app/random_forest.h5'
+with h5py.File(model_h5_path, 'r') as h5_file:
+    model_byte_stream = h5_file['random_forest_model'][()]
+    model = pickle.loads(model_byte_stream.tobytes())
 
 @app.route('/')
 def home():
@@ -32,11 +32,10 @@ def predict():
     age = int(request.form['age'])
 
     # Make prediction using the loaded model
-    input_data = np.array([[pregnancies, glucose, blood_pressure,
-                            bmi, diabetes_pedigree_function, age]])
+    input_data = np.array(
+        [[pregnancies, glucose, blood_pressure, bmi, diabetes_pedigree_function, age]])
     prediction = model.predict(input_data)
 
-    print(prediction[0])
     # Prepare response
     if prediction[0] == 1:
         result = 'Diabetes'
