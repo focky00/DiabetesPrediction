@@ -174,13 +174,13 @@ if __name__ == '__main__':
 #### EDA - Correlation Heatmap
 ![Correlation Heatmap](https://github.com/suhaskm28/Diabetes_Prediction/blob/main/images/correlation_matrix.png)
 
-
-## License
-
-This project is licensed under the MIT License.
-
 ## Conclusion
 
 This project demonstrates the application of data science techniques to predict diabetes using machine learning. By performing thorough exploratory data analysis (EDA), training multiple models, and deploying the best model using Flask, we provide a practical tool for diabetes prediction. 
+
+
+## License
+This project is licensed under the MIT License.
+
 
 
