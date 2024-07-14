@@ -4,10 +4,12 @@
 
 This repository contains a project developed under Data Science and Visualization, where we explore and visualize a diabetes dataset, train various machine learning models, and deploy the best model using a Flask web application for predicting diabetes.
 
+## Supervised by
+![Prof. Agughasi Victor Ikechukwu](https://github.com/Victor-Ikechukwu), (Assistant Professor) Department of CSE, MIT Mysore)
 ## Project Structure
 
 ```plaintext
-Diabetes-Prediction/
+Diabetes_Prediction/
 │
 ├── dataset/
 │   └── diabetes.csv                    # Dataset from Kaggle
