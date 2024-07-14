@@ -57,11 +57,16 @@ The dataset used in this project is the diabetes dataset from Kaggle, which incl
     ```bash
     git clone https://github.com/suhaskm28/diabetes-prediction-app.git
     ```
-2. Navigate to the project directory:
+2. On Windows use
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+3. Navigate to the project directory:
     ```bash
     cd Diabetes-Prediction
     ```
-3. Install the required packages:
+4. Install the required packages:
     ```bash
     pip install -r requirements.txt
     ```
@@ -173,5 +178,9 @@ if __name__ == '__main__':
 ## License
 
 This project is licensed under the MIT License.
-```
+
+## Conclusion
+
+This project demonstrates the application of data science techniques to predict diabetes using machine learning. By performing thorough exploratory data analysis (EDA), training multiple models, and deploying the best model using Flask, we provide a practical tool for diabetes prediction. 
+
 
