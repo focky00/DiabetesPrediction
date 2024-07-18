@@ -13,6 +13,26 @@ This repository contains a project developed under Data Science and Visualizatio
 - 4MH21CS107 [Syed Furkhan Ahmed](https://github.com/)
 - 4MH21CS112 [Thejas R](https://github.com/Thejuraj2003)
 
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Data](#data)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Jupyter Notebook](#jupyter-notebook)
+  - [Flask Application](#flask-application)
+- [Code Explanation](#code-explanation)
+- [File Descriptions](#file-descriptions)
+- [Diabetes Prediction](#diabetes-prediction)
+  - [Input Form](#input-form)
+  - [Prediction Result](#prediction-result)
+- [Diabetes Visualization](#diabetes-visualization)
+  - [EDA - Pairplot](#eda---pairplot)
+  - [EDA - Correlation Heatmap](#eda---correlation-heatmap)
+- [Conclusion](#conclusion)
+- [License](#license)
+
 ## Project Structure
 
 ```plaintext
@@ -189,5 +209,4 @@ This project demonstrates the application of data science techniques to predict 
 ## License
 This project is licensed under the MIT License.
 
-
-
+---
