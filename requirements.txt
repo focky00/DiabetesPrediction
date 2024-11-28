@@ -1,7 +1,7 @@
-Flask
-numpy
-pandas
-scikit-learn
-matplotlib
+Flask==2.2.3
+numpy==1.24.2
+pandas==1.5.3
+scikit-learn==1.1.3
+tensorflow==2.10.0  # if you are using a model like random_forest.h5 or any deep learning model
+gunicorn==20.1.0   # production-ready WSGI server for Flask (Render uses it)
 seaborn
-jupyter
