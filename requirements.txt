@@ -1,8 +1,8 @@
-Flask==2.2.3
-numpy==1.24.2
-pandas==1.5.3
-scikit-learn==1.1.3
+Flask==3.0.0
+numpy==2.1.3
+pandas==2.2.3
+scikit-learn==1.5.1
 gunicorn==20.1.0
-werkzeug==2.2.2
-seaborn
-h5py
+werkzeug==3.0.1
+seaborn==0.13.2
+h5py==3.10.0
