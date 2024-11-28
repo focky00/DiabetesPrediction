@@ -1,11 +1,19 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+import os
 
 app = Flask(__name__)
 
 # Load the trained model from .pkl file
-model_path = 'random_forest.pkl'  # Assuming the model is saved as a pickle file
+model_path = 'random_forest.pkl'
+print("Current Working Directory:", os.getcwd())  # Debug: prints the current directory
+print("Files in Directory:", os.listdir(os.getcwd()))  # Debug: lists files in the directory
+
+# Attempt to load the model
+with open(model_path, 'rb') as model_file:
+    model = pickle.load(model_file)
+
 with open(model_path, 'rb') as model_file:
     model = pickle.load(model_file)  # Load the model with pickle
 
